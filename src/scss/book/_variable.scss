@@ -6,6 +6,7 @@
   --header-heading-font-size: 1.25rem;
   --nav-display: flex;
   --nav-gap: 1.5rem;
+  --nav-btn-display: block;
   --home-heading-font-size: 2rem;
   --home-image-width: 300px;
   --home-flex-justify-content: space-between;
@@ -33,11 +34,18 @@
     --contact-form-gird-colum: repeat(2, 250px);
   }
 
+  @media screen and (max-width: 768px) {
+    --nav-display: none;
+    --nav-btn-display: none;
+  }
+
   @media screen and (max-width: 640px) {
     --container-padding-left: 1.5rem;
     --container-padding-right: 1.5rem;
     --header-heading-font-size: 1rem;
     --nav-gap: 1rem;
+    --nav-display: none;
+    --nav-btn-display: none;
     --home-flex-direction: column-reverse;
     --home-flex-justify-content: center;
     --home-text-align-items: center;

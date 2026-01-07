@@ -20,6 +20,7 @@ header {
   }
 
   div.nav-btn {
+    display: var(--nav-btn-display);
     border-radius: 0.5rem;
     margin-left: auto;
     background-color: var(--primary-color);
