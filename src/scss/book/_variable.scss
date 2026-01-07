@@ -1,17 +1,21 @@
 :root {
   --search--search-bar-display: flex;
   --book-min-width: 256px;
-  --container-padding-left: 10rem;
-  --container-padding-right: 6rem;
+  --container-padding-left: 2rem;
+  --container-padding-right: 2rem;
   --header-heading-font-size: 1.25rem;
   --nav-display: flex;
   --nav-gap: 1.5rem;
   --nav-btn-display: block;
   --home-heading-font-size: 2rem;
+  --home-flex-direction: row;
   --home-image-width: 300px;
   --home-flex-justify-content: space-between;
   --home-width: 50%;
+  --home-img-radius: 10%;
+  --about-flex-direction: row;
   --about-flex-justify-content: space-between;
+  --about-align-items: flex-start;
   --introduce-width: 50%;
   --interduce-card-margin-left: 4rem;
   --skills-margin-right: 4rem;
@@ -22,6 +26,8 @@
   --contect-button-grid-column: 1/-1;
 
   @media screen and (max-width: 1024px) {
+    --nav-display: none;
+    --nav-btn-display: none;
     --home-heading-font-size: 1.5rem;
     --home-image-width: 250px;
     --about-flex-direction: column;
@@ -32,11 +38,6 @@
     --skills-margin-right: 0rem;
     --skills-width: 65%;
     --contact-form-gird-colum: repeat(2, 250px);
-  }
-
-  @media screen and (max-width: 768px) {
-    --nav-display: none;
-    --nav-btn-display: none;
   }
 
   @media screen and (max-width: 640px) {
@@ -51,7 +52,9 @@
     --home-text-align-items: center;
     --home-width: 100%;
     --home-align-items: 1.5rem;
-    --introduce-width: 90%;
+    --home-image-width: 280px;
+    --home-img-radius: 50%;
+    --introduce-width: 100%;
     --skills-width: 90%;
     --contact-margin-bottom: 0px;
     --contact-form-gird-colum: 80vw;

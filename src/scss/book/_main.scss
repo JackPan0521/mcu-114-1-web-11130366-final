@@ -31,11 +31,13 @@ section {
       &.featured-box {
         height: 100vh;
         display: flex;
-        justify-content: space-between;
+        flex-direction: var(--home-flex-direction);
+        justify-content: var(--home-flex-justify-content);
         align-items: center;
         gap: 2rem;
 
         .featured-text {
+          width: var(--home-width);
           flex: 1;
 
           &-card {
@@ -105,6 +107,7 @@ section {
         }
 
         .featured-image {
+          width: var(--home-width);
           flex: 1;
           display: flex;
           justify-content: center;
@@ -112,12 +115,12 @@ section {
 
           .image {
             width: 100%;
-            max-width: 400px;
+            max-width: var(--home-image-width);
 
             img {
               width: 100%;
               height: auto;
-              border-radius: 10%;
+              border-radius: var(--home-img-radius);
               box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
             }
           }
@@ -143,10 +146,14 @@ section {
 
         .row {
           display: flex;
+          flex-direction: var(--about-flex-direction);
+          justify-content: var(--about-flex-justify-content);
+          align-items: var(--about-align-items);
           gap: 2rem;
 
           .col {
             flex: 1;
+            width: var(--introduce-width);
 
             .about-info,
             .education {
@@ -189,6 +196,10 @@ section {
           grid-template-columns: 1fr 1fr;
           gap: 3rem;
           width: 100%;
+
+          @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+          }
 
           .skills-left,
           .skills-right {
