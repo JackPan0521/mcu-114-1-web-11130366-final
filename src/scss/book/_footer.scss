@@ -1,0 +1,50 @@
+@use "../common";
+footer {
+  border-top: 1px solid var(--border-color);
+  padding-block: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+
+  .middle-footer {
+    .footer-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      .footer_menu_list {
+        a {
+          color: var(--text-color);
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .bottom-footer {
+    @include common.fontStyle(0.875rem, 400, 1rem);
+    text-align: center;
+
+    p {
+      margin: 0;
+      color: var(--gray-color-500);
+    }
+  }
+}

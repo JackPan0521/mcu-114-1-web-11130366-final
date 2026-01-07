@@ -87,7 +87,15 @@ header h3 {
   color: var(--primary-color);
 }
 header div.nav-btn {
+  border-radius: 0.5rem;
   margin-left: auto;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s;
+}
+header div.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -361,27 +369,37 @@ footer {
   align-items: center;
   row-gap: 30px;
 }
-footer h3 {
+footer .middle-footer .footer-menu {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 3rem;
-  color: var(--header-color);
-}
-footer nav {
-  display: var(--nav-sidplay);
+  display: flex;
   justify-content: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
-footer div.icons {
+footer .middle-footer .footer-menu .footer_menu_list a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .middle-footer .footer-menu .footer_menu_list a:hover {
+  color: var(--primary-color);
+}
+footer .footer-social-icons {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-footer div.copy-right {
+footer .bottom-footer {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1rem;
+  text-align: center;
+}
+footer .bottom-footer p {
+  margin: 0;
+  color: var(--gray-color-500);
 }
 
 div.content {
