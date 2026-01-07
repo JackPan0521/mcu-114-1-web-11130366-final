@@ -1,0 +1,11 @@
+@mixin buttonStyle {
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin fontStyle($size, $wight, $lineHeight) {
+  font-size: $size;
+  font-weight: $wight;
+  line-height: $lineHeight;
+}
