@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jack Pan的個人簡介</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="profile.css" />
     <link rel="stylesheet" href="profile.css.map" />
   </head>
@@ -16,16 +24,216 @@
             <h3>Profile</h3>
             <nav>
               <a href="#home" class="active">首頁</a>
-              <a href="#book">關於書籍</a>
-              <a href="#contact">聯絡作者</a>
+              <a href="#about">關於我</a>
+              <a href="#skill">技術</a>
+              <a href="#contact">作品集</a>
             </nav>
             <div class="nav-btn">
-              <button>下載履歷</button>
+              <button>
+                下載履歷<span class="material-symbols-outlined">
+                  picture_as_pdf
+                </span>
+              </button>
             </div>
           </div>
         </div>
       </header>
       <!--main section-->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Jack Pan</span>
+            </div>
+            <div class="featured-name">
+              <p>我是全端工程師</p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                正在累積開發經驗，目前接觸前端網頁開發，過去也有過後端資料研究、演算法設計的經驗
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn blue-btn">Hire Me</button>
+              <button class="btn">
+                下載履歷
+                <span class="material-symbols-outlined">picture_as_pdf</span>
+              </button>
+            </div>
+            <div class="social_icons">
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+              <div class="icon"><i class="fa-brands fa-github"></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="assets/images/Audi TTRS COUPE.png" />
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>關於我</h1>
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint,
+              maxime?</span
+            >
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>自我介紹</h3>
+                <p>
+                  我曾經有過Dart
+                  flutter開發應用程式的經驗，同時也使用python作後端資料處裡，
+                </p>
+                <p>由於我第一門語言學習的是java也設計過幾款遊戲。</p>
+                <p>目前也正在學習html、css、javascript設計網頁。</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="education">
+                <h3>教育程度</h3>
+                <div class="resume-item">
+                  <strong>銘傳大學 資訊管理系 學士</strong>
+                  <strong>2022/9 ~ 2026/8</strong>
+                </div>
+                <div class="resume-item">
+                  <strong>銘傳大學 資訊工程系 學士</strong>
+                  <strong>2022/9 ~ 2026/8</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- SKILLS BOX ---------------- -->
+        <section class="section" id="skill">
+          <div class="top-header">
+            <h1>技術</h1>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              debitis!</span
+            >
+          </div>
+          <div class="skills">
+            <div class="skills-left">
+              <div class="item">
+                <span class="skill">
+                  <span>Git</span>
+                  <span>60%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <span class="skill">
+                  <span>HTML</span>
+                  <span>50%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <span class="skill">
+                  <span>JavaScript</span>
+                  <span>40%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <span class="skill">
+                  <span>CSS</span>
+                  <span>40%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-right">
+              <div class="item">
+                <span class="skill">
+                  <span>Java</span>
+                  <span>80%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <span class="skill">
+                  <span>Python</span>
+                  <span>75%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="item">
+                <span class="skill">
+                  <span>Dart</span>
+                  <span>80%</span>
+                </span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>作品集</h1>
+            <span>歷年作品展示</span>
+          </div>
+          <div class="grid">
+            <div class="item">
+              <a href="./demo.html" target="_blank">
+                <h4>作品 1</h4>
+                <strong>主要實作網站切版</strong>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+            <div class="item">
+              <h4>作品 2</h4>
+              <strong>主要實作網站切版</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="item">
+              <h4>作品 3</h4>
+              <strong>主要實作網站切版</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="item">
+              <h4>作品 4</h4>
+              <strong>主要實作網站切版</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="item">
+              <h4>作品 5</h4>
+              <strong>主要實作網站切版</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="item">
+              <h4>作品 6</h4>
+              <strong>主要實作網站切版</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </section>
+      </main>
       <!--footer section-->
     </section>
     <script src="./main.js"></script>
